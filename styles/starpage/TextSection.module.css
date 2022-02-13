@@ -1,0 +1,59 @@
+.container {
+  padding: 0rem 0 4rem 0;
+  margin: 10rem 30rem 0rem 30rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  grid-column-gap: 4rem;
+}
+.header {
+  margin: 0 0 3rem 0;
+  font-size: 2rem;
+  color: var(--header);
+}
+.text {
+  font-size: 1.2rem;
+  color: rgb(146, 146, 146);
+}
+
+@media screen and (max-width: 1990px) {
+  .container {
+    margin: 10rem 16.5rem 0 16.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  }
+}
+@media screen and (max-width: 1700px) {
+  .container {
+    margin: 0 15rem;
+  }
+}
+@media screen and (max-width: 1570px) {
+  .container {
+    margin: 0 4rem;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .container {
+    grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+    grid-row-gap: 5rem;
+  }
+}
+@media screen and (max-width: 1215px) {
+  .container {
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    grid-row-gap: 5rem;
+  }
+}
+@media screen and (max-width: 1125px) {
+  .container {
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    grid-row-gap: 5rem;
+  }
+}
+@media screen and (max-width: 756px) {
+  .container {
+    margin: 0;
+    padding: 3rem 0;
+    grid-row-gap: 0rem;
+    grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+  }
+}

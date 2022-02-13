@@ -1,0 +1,94 @@
+.bilxtralogo {
+  height: 5rem;
+}
+.container {
+  background: var(--primary);
+  color: var(--secondary);
+  display: grid;
+  grid-template-columns: 20rem 1fr 1fr 1fr 1fr 20rem;
+  grid-template-areas: ". f s t ic .";
+  font-style: italic;
+  padding: 2rem;
+  grid-area: footer;
+  z-index: 100;
+
+  align-items: start;
+}
+.copyrightContainer {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  color: var(--footer-text);
+  margin-left: 0.5rem;
+}
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  width: 13.8rem;
+  opacity: 0.5;
+}
+.firstContainer {
+  grid-area: f;
+}
+.header {
+  font-weight: 600;
+  margin: 0;
+  color: var(--footer-header);
+}
+.iconContainer {
+  grid-area: ic;
+  display: flex;
+}
+.secondContainer {
+  grid-area: s;
+  display: flex;
+}
+.thirdContainer {
+  grid-area: t;
+  width: 100%;
+}
+.text {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--footer-text);
+  font-weight: 100;
+  font-style: normal;
+  font-style: italic;
+}
+.underLogoText {
+  color: var(--footer-header);
+  font-family: "Poiret One";
+  margin-top: 0;
+  font-style: normal;
+}
+@media screen and (max-width: 1990px) {
+  .container {
+    grid-template-columns: 12rem 1fr 1fr 1fr 1fr 12rem;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .container {
+    grid-template-columns: 10rem 1fr 1fr 1fr 1fr 10rem;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .container {
+    grid-template-columns: 5rem 1fr 1fr 1fr 1fr 5rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .container {
+    grid-template-columns: 1rem 1fr 1fr 1fr 1fr 1rem;
+    grid-template-rows: 1fr 2rem 1fr 1fr 1fr;
+    grid-template-areas:
+      ". f f f ."
+      ". . . . ."
+      ". s s s ."
+      ". t t t ."
+      ". ic ic ic .";
+  }
+  .thirdContainer {
+    margin-top: 2rem;
+  }
+}
